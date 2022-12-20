@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7.2</title>
+
+
+    <style>
+        th {
+            border: 1px solid black;
+            border-collapse: collapse;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Реалізовуємо форму для реєстрації.
+Поля:
+Ім'я, Прізвище (Текстові поля)
+Дата народження (Текстове поле)
+Стать (radio)
+Місто (select)
+Адреса (textarea)
+Мови, якими володіє (checkbox)
+….
+Кнопка “Зберегти”
+
+За натисканням на кнопку замість форми повинна виводитися “таблиця” з даними, які ввів користувач. -->
+
+    <form class="registration_form">
+        <div class="form_box">
+            <input type="text" name="Name" placeholder="Name:">
+            <input type="text" name="Surname" placeholder="Surname:">
+        </div>
+        <input type="date" name="DateOfBirth">
+        <div class="form_box">
+            <input type="radio" name="Sex" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="Sex" id="female" value="female">
+            <label for="female">Female</label>
+            <select name="City">
+                <option value="Odessa">Odessa</option>
+                <option value="Lviv">Lviv</option>
+                <option value="Kyiv">Kyiv</option>
+                <option value="Dnipro">Dnipro</option>
+            </select>
+        </div>
+        <div class="form_box">
+            <textarea name="Address" cols="30" rows="1" placeholder="Address:"></textarea>
+        </div>
+        <div class="form_box">
+            <input type="checkbox" name="English" id="en">
+            <label for="en">En</label>
+            <input type="checkbox" name="Spanish" id="es">
+            <label for="es">Es</label>
+            <input type="checkbox" name="Ukrainian" id="ua">
+            <label for="ua">Ua</label>
+        </div>
+        <button type="submit">Save</button>
+    </form>
+
+    <table class="output_table">
+        <thead>
+            <tr class="output_table__head"></tr>
+        </thead>
+        <tbody>
+            <tr class="output_table__body"></tr>
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
