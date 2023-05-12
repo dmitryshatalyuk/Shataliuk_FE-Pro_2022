@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>44</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="burger-box">
+            <img src="image 2.png" alt="burger" class="burger-img">
+            <div class="order-form" data-visible="true">
+                <h2>Create your burger</h2>
+                <form class="burger-form">
+                    <fieldset class="formfield burger-type">
+                        <h3>Choose size:</h3>
+
+                        <div class="box">
+                            <div class="burger-size__box">
+                                <input type="radio" name="size" value="big" id="big" checked required>
+                                <label class="label" for="big">Big</label>
+                            </div>
+
+                            <div class="burger-size__box">
+                                <input type="radio" name="size" value="small" id="small" required>
+                                <label class="label" for="small">Small</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="formfield burger-type">
+                        <h3>Add filling:</h3>
+
+                        <div class="box">
+                            <div class="burger-size__box">
+                                <input type="checkbox" name="cheese" id="cheese">
+                                <label class="label" for="cheese">Cheese</label>
+                            </div>
+                            <div class="burger-size__box">
+                                <input type="checkbox" name="salad" id="salad">
+                                <label class="label" for="salad">Salad</label>
+                            </div>
+                            <div class="burger-size__box">
+                                <input type="checkbox" name="potatoe" id="potatoe">
+                                <label class="label" for="potatoe">Potatoe</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="formfield burger-type">
+                        <h3>Additional:</h3>
+
+                        <div class="box">
+                            <div class="burger-size__box">
+                                <input type="checkbox" name="mayonnaise" id="mayonnaise">
+                                <label class="label" for="mayonnaise">Mayonnaise</label>
+                            </div>
+                            <div class="burger-size__box">
+                                <input type="checkbox" name="seasoning" id="seasoning">
+                                <label class="label" for="seasoning">Seasoning</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <button type="submit" class="btn">Create Your Burger</button>
+                </form>
+            </div>
+            <div class="order-total" data-visible="true">
+                <div class="total-box"></div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
